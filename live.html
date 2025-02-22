@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Ζωντανή Ροή - NTUA Radio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+  <a href="index.html" class="logo">NTUA Radio</a>
+  <nav>
+    <ul>
+      <li><a href="index.html">Αρχική</a></li>
+      <li><a href="schedule.html">Πρόγραμμα</a></li>
+      <li><a href="about.html">Σχετικά</a></li>
+      <li><a href="contact.html">Επικοινωνία</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main>
+    <!-- Ενότητα για το audio player -->
+    <section class="audio-section">
+      <h2>Ζωντανή Ροή</h2>
+      <audio controls>
+        <!-- Αντικατέστησε το URL με το δικό σου stream -->
+        <source src="http://localhost:8000/stream" type="audio/mpeg">
+        Ο περιηγητής σας δεν υποστηρίζει το στοιχείο audio.
+      </audio>
+    </section>
+
+    <!-- Ενότητα για το Live Chat -->
+    <section class="chat-section">
+      <h2>Live Chat</h2>
+      <iframe 
+        src="https://organizations.minnit.chat/808702440957882/c/Main?embed" 
+        style="border:none; width:90%; height:500px; max-height:90vh;" 
+        allowTransparency="true">
+      </iframe>
+      <p class="fallback-chat" style="display: none;">
+        Το live chat δεν είναι διαθέσιμο αυτή τη στιγμή. <a href="https://organizations.minnit.chat/808702440957882/c/Main">Κάνε κλικ εδώ</a> για να το ανοίξεις σε νέο παράθυρο.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>NTUA Radio &copy; 2025</p>
+  </footer>
+</body>
+</html>
